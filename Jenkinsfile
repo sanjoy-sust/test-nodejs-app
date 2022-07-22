@@ -19,7 +19,7 @@ pipeline {
          stage("Deploy application") { 
          steps { 
            sh 'echo "deploying application..."'
-           sh 'npm start'
+           sh 'npm start &'
            sh 'echo "deployment completed"'
          }
 
